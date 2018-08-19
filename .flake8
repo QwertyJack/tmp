@@ -1,0 +1,8 @@
+[flake8]
+exclude =
+    .git,
+    venv,
+    tests,
+count = yes
+show-source = yes
+statistics = yes
