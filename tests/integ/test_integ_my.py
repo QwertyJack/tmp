@@ -7,7 +7,9 @@
 # Distributed under terms of the MIT license.
 
 """
-integration test
+This example shows how to write integration test.
+
+Run `pytest -m integ` to run integration test(s) only.
 """
 
 import pytest
@@ -22,5 +24,8 @@ def data():
 
 @pytest.mark.integ
 def test_integ_my(data):
-    """actually this is a unit test instead of an integration test"""
+    """An integration test
+
+    Actually this is not an integration test; just an example instead.
+    """
     assert sorted(map(my_square, data)) == sorted([0, 1, 4])
